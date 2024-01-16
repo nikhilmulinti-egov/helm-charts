@@ -1,0 +1,10 @@
+apiVersion: v2
+name: test-chart
+version: 1.0.0
+description: A sample Helm chart
+keywords:
+  - sample
+  - helm
+maintainers:
+  - name: Your Name
+    email: your@email.com
