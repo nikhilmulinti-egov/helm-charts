@@ -5,13 +5,11 @@ on:
     branches:
       - main
 
-permissions: {}
+permissions: 
+  contents: write # to push chart release and create a release (helm/chart-releaser-action)
+  packages: write # needed for ghcr access
 jobs:
   release:
-    permissions:
-      contents: write # to push chart release and create a release (helm/chart-releaser-action)
-      packages: write # needed for ghcr access
-
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
